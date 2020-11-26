@@ -16,7 +16,8 @@ services:
     networks:
       - clarusnet
   app-server:
-    image: "${ECR_REGISTRY}/${APP_REPO_NAME}:latest"
+    image: 425828866775.dkr.ecr.us-east-1.amazonaws.com/clarusway-repo/phonebook-app:latest 
+#"${ECR_REGISTRY}/${APP_REPO_NAME}:latest"
     deploy:
       mode: global
       update_config:
